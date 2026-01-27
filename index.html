@@ -1,56 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mercatora – Handel & Beratung</title>
-<style>
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;background:#fafafa;margin:0;color:#222}
-.section{padding:4rem 1.5rem}
-.wrap{max-width:980px;margin:0 auto}
-.hero{background:#111;color:#fff}
-.hero h1{font-size:2.4rem;margin:.2em 0}
-.hero p{opacity:.9}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
-.card{background:#fff;padding:1.5rem;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
-footer{background:#eee;color:#555}
-a{color:#111;text-decoration:none}
-</style>
-</head>
-<body>
-
-<section class="section hero">
-  <div class="wrap">
-    <h1>Mercatora</h1>
-    <p>Handel · Beratung · Projekte</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap grid">
-    <div class="card">
-      <h3>Leistungen</h3>
-      <p>Handel mit ausgewählten Produkten, Beratung und projektbezogene Tätigkeiten.</p>
-    </div>
-    <div class="card">
-      <h3>Ansatz</h3>
-      <p>Sachlich, transparent und lösungsorientiert – mit Blick für wirtschaftliche Details.</p>
-    </div>
-    <div class="card">
-      <h3>Kontakt</h3>
-      <p>E-Mail: <a href="mailto:info@mercatora.eu">info@mercatora.eu</a></p>
-    </div>
-  </div>
-</section>
-
-<footer class="section">
-  <div class="wrap">
-    <p><strong>Impressum</strong><br>
-    Mercatora · Einzelunternehmen<br>
-    </p>
-  </div>
-</footer>
-
-</body>
-</html>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mercatora – Kleingewerbe</title>
+  <meta name="description" content="Mercatora – Kleingewerbe: Handel, Beratung, Projekte. Kontakt & Informationen." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111826;
+      --muted:#a9b4c2;
+      --text:#eef3fb;
+      --line:rgba(255,255,255,.10);
+      --accent:#7dd3fc;
+      --accent2:#a78bfa;
+      --shadow:0 16px 50px rgba(0,0,0,.45);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(125,211,252,.18), transparent 55%),
+        radial-gradient(900px 500px at 90% 10%, rgba(167,139,250,.18), transparent 55%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,15,20,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      padding:14px 0;
+    }
+    .brand{
+      display:flex;gap:10px;align-items:center;text-decoration:none;
+      font-weight:700;letter-spacing:.3px;
+    }
+    .logo{
+      width:36px;height:36px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(125,211,252,.9), rgba(167,139,250,.9));
+      box-shadow: 0 10px 30px rgba(125,211,252,.15);
+    }
+    nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0}
+    nav a{
+      text-decoration:none;
+      padding:10px 12px;border-radius:12px;
+      color:var(--muted);
+      border:1px solid transparent;
+    }
+    nav a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.03)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      gap:10px;
+      padding:12px 14px;border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      text-decoration:none;
+    }
+    .btn.primary{
+      border-color:transparent;
+      background: linear-gradient(135deg, rgba(125,211,252,.95), rgba(167,139,250,.95));
+      color:#081018;
+      font-weight:700;
+    }
+    .btn.primary:hover{filter:saturate(1.05) brightness(1.02)}
+    .hero{
+      padding:56px 0 30px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width:920px){
+      .hero-grid{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+    .card{
+      background: rgba(17,24,38,.7);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .hero-main{padding:26px}
+    .kicker{color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
+    h1{margin:.45rem 0 0;font-size:2.35rem;line-height:1.15}
+    .lead{color:var(--muted);margin:12px 0 18px;font-size:1.04rem}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-side{padding:18px;display:grid;gap:12px}
+    .mini{
+      padding:16px;border-radius:14px;border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .mini strong{display:block;margin-bottom:4px}
+    section{padding:46px 0}
+    .section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+    .section-title h2{margin:0;font-size:1.55rem}
+    .section-title p{margin:0;color:var(--muted);max-width:60ch}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
+    }
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    .feature{padding:18px}
+    .feature h3{margin:0 0 6px;font-size:1.05rem}
+    .feature p{margin:0;color:var(--muted)}
+    .badge{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:8px 10px;border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius:999px;color:var(--muted);
+      font-size:.9rem;
+    }
+    .split{
+      display:grid;grid-template-columns:1fr 1fr;gap:14px;
+    }
+    @media (max-width:920px){.split{grid-template-columns:1fr}}
+    details{
+      border:1px solid var(--line);
+      border-radius:14px;
+      bac
