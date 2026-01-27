@@ -1,134 +1,283 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mercatora – Kleingewerbe</title>
-  <meta name="description" content="Mercatora – Kleingewerbe: Handel, Beratung, Projekte. Kontakt & Informationen." />
-  <style>
-    :root{
-      --bg:#0b0f14;
-      --card:#111826;
-      --muted:#a9b4c2;
-      --text:#eef3fb;
-      --line:rgba(255,255,255,.10);
-      --accent:#7dd3fc;
-      --accent2:#a78bfa;
-      --shadow:0 16px 50px rgba(0,0,0,.45);
-      --radius:16px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:
-        radial-gradient(1200px 600px at 20% -10%, rgba(125,211,252,.18), transparent 55%),
-        radial-gradient(900px 500px at 90% 10%, rgba(167,139,250,.18), transparent 55%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.55;
-    }
-    a{color:inherit}
-    .container{max-width:1100px;margin:0 auto;padding:0 18px}
-    header{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter: blur(10px);
-      background: rgba(11,15,20,.65);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex;align-items:center;justify-content:space-between;
-      padding:14px 0;
-    }
-    .brand{
-      display:flex;gap:10px;align-items:center;text-decoration:none;
-      font-weight:700;letter-spacing:.3px;
-    }
-    .logo{
-      width:36px;height:36px;border-radius:12px;
-      background: linear-gradient(135deg, rgba(125,211,252,.9), rgba(167,139,250,.9));
-      box-shadow: 0 10px 30px rgba(125,211,252,.15);
-    }
-    nav ul{list-style:none;display:flex;gap:14px;margin:0;padding:0}
-    nav a{
-      text-decoration:none;
-      padding:10px 12px;border-radius:12px;
-      color:var(--muted);
-      border:1px solid transparent;
-    }
-    nav a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.03)}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      gap:10px;
-      padding:12px 14px;border-radius:14px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      text-decoration:none;
-    }
-    .btn.primary{
-      border-color:transparent;
-      background: linear-gradient(135deg, rgba(125,211,252,.95), rgba(167,139,250,.95));
-      color:#081018;
-      font-weight:700;
-    }
-    .btn.primary:hover{filter:saturate(1.05) brightness(1.02)}
-    .hero{
-      padding:56px 0 30px;
-    }
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.25fr .75fr;
-      gap:18px;
-      align-items:stretch;
-    }
-    @media (max-width:920px){
-      .hero-grid{grid-template-columns:1fr}
-      nav ul{display:none}
-    }
-    .card{
-      background: rgba(17,24,38,.7);
-      border:1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .hero-main{padding:26px}
-    .kicker{color:var(--muted);letter-spacing:.16em;text-transform:uppercase;font-size:.78rem}
-    h1{margin:.45rem 0 0;font-size:2.35rem;line-height:1.15}
-    .lead{color:var(--muted);margin:12px 0 18px;font-size:1.04rem}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-side{padding:18px;display:grid;gap:12px}
-    .mini{
-      padding:16px;border-radius:14px;border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-    }
-    .mini strong{display:block;margin-bottom:4px}
-    section{padding:46px 0}
-    .section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
-    .section-title h2{margin:0;font-size:1.55rem}
-    .section-title p{margin:0;color:var(--muted);max-width:60ch}
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:14px;
-    }
-    @media (max-width:920px){.grid{grid-template-columns:1fr}}
-    .feature{padding:18px}
-    .feature h3{margin:0 0 6px;font-size:1.05rem}
-    .feature p{margin:0;color:var(--muted)}
-    .badge{
-      display:inline-flex;gap:8px;align-items:center;
-      padding:8px 10px;border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      border-radius:999px;color:var(--muted);
-      font-size:.9rem;
-    }
-    .split{
-      display:grid;grid-template-columns:1fr 1fr;gap:14px;
-    }
-    @media (max-width:920px){.split{grid-template-columns:1fr}}
-    details{
-      border:1px solid var(--line);
-      border-radius:14px;
-      bac
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercatora – Kleingewerbe</title>
+<meta name="description" content="Mercatora – Kleingewerbe: Handel, Beratung, Projekte.">
+
+<style>
+/* ========= BASIS & SICHERHEIT ========= */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:#f5f7fa;
+  color:#111111;
+  line-height:1.6;
+}
+
+/* ========= LAYOUT ========= */
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 20px;
+}
+section{
+  padding:70px 0;
+}
+h1,h2,h3{
+  margin:0 0 12px;
+}
+p{
+  margin:0 0 16px;
+  color:#333;
+}
+
+/* ========= HEADER ========= */
+header{
+  position:sticky;
+  top:0;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  z-index:100;
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+}
+.brand{
+  font-weight:700;
+  font-size:1.1rem;
+  text-decoration:none;
+  color:#111;
+}
+nav a{
+  margin-left:16px;
+  text-decoration:none;
+  color:#444;
+}
+nav a:hover{
+  color:#000;
+}
+
+/* ========= HERO ========= */
+.hero{
+  background:#ffffff;
+}
+.hero h1{
+  font-size:2.4rem;
+}
+.hero p{
+  font-size:1.1rem;
+}
+.buttons a{
+  display:inline-block;
+  margin-right:10px;
+  margin-top:10px;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  border:1px solid #ccc;
+  color:#111;
+}
+.buttons a.primary{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+/* ========= GRID ========= */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+}
+.card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:14px;
+  padding:20px;
+}
+
+/* ========= ACCORDION ========= */
+details{
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:14px;
+  margin-bottom:10px;
+  background:#fff;
+}
+summary{
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* ========= FORM ========= */
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-family:inherit;
+}
+form button{
+  padding:12px 18px;
+  border:none;
+  border-radius:10px;
+  background:#111;
+  color:#fff;
+  font-size:1rem;
+  cursor:pointer;
+}
+
+/* ========= FOOTER ========= */
+footer{
+  border-top:1px solid #e5e7eb;
+  background:#fafafa;
+  padding:40px 0;
+  font-size:0.95rem;
+  color:#555;
+}
+
+/* ========= TOP BUTTON ========= */
+#topBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  display:none;
+  padding:10px 14px;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+}
+#topBtn.show{
+  display:block;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top">Mercatora</a>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#infos">Infos</a>
+      <a href="#ueber">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="container">
+    <h1>Mercatora</h1>
+    <p>Kleingewerbe · Handel · Beratung · Projekte</p>
+    <div class="buttons">
+      <a class="primary" href="#kontakt">Kontakt aufnehmen</a>
+      <a href="#leistungen">Mehr erfahren</a>
+    </div>
+  </div>
+</section>
+
+<section id="leistungen">
+  <div class="container">
+    <h2>Leistungen</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Handel</h3>
+        <p>Ausgewählte Produkte und Waren im Rahmen des Kleingewerbes.</p>
+      </div>
+      <div class="card">
+        <h3>Beratung</h3>
+        <p>Strukturierte, praxisnahe Beratung ohne Buzzwords.</p>
+      </div>
+      <div class="card">
+        <h3>Projekte</h3>
+        <p>Projektbezogene Unterstützung von Planung bis Umsetzung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="infos">
+  <div class="container">
+    <h2>Weitere Informationen</h2>
+
+    <details>
+      <summary>Arbeitsweise</summary>
+      <p>Direkte Kommunikation, klare Schritte, nachvollziehbare Ergebnisse.</p>
+    </details>
+
+    <details>
+      <summary>Themen & Schwerpunkte</summary>
+      <p>Handel, Prozesse, Digitalisierung, Organisation.</p>
+    </details>
+
+    <details>
+      <summary>FAQ</summary>
+      <p>Fragen zu Ablauf, Umfang und Zusammenarbeit.</p>
+    </details>
+  </div>
+</section>
+
+<section id="ueber">
+  <div class="container">
+    <h2>Über uns</h2>
+    <p>
+      Mercatora steht für sachliche, strukturierte und verlässliche Arbeit.
+      Fokus liegt auf umsetzbaren Lösungen und klarer Kommunikation.
+    </p>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="container">
+    <h2>Kontakt</h2>
+
+    <form action="mailto:kontakt@mercatora.eu" method="post" enctype="text/plain">
+      <input name="name" placeholder="Name" required>
+      <input name="email" type="email" placeholder="E-Mail" required>
+      <textarea name="message" placeholder="Nachricht" required></textarea>
+      <button type="submit">Senden</button>
+    </form>
+
+    <p style="margin-top:10px;">
+      Oder direkt per E-Mail:
+      <a href="mailto:kontakt@mercatora.eu">kontakt@mercatora.eu</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<a id="topBtn" href="#top">⬆</a>
+
+<footer>
+  <div class="container">
+    <p><strong>Mercatora</strong> · Kleingewerbe</p>
+    <p>Impressum · Datenschutz</p>
+    <p>© <span id="year"></span></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const btn=document.getElementById("topBtn");
+window.addEventListener("scroll",()=>{
+  if(window.scrollY>400){btn.classList.add("show")}
+  else{btn.classList.remove("show")}
+});
+</script>
+
+</body>
+</html>
