@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mercatora – Kleingewerbe</title>
   <meta name="description" content="Mercatora – Kleingewerbe: Handel, Beratung, Projekte.">
-  <link rel="icon" href="favicon.png" type="image/png">
 
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="mercatora_logo_favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="mercatora_logo_favicon.png">
+  <meta name="theme-color" content="#0f3f3a">
+
+  <!-- Deine restlichen Styles und Scripts -->
   <style>
-    * { box-sizing: border-box }
-    html { scroll-behavior: smooth }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: #f5f7fa;
       color: #111;
       line-height: 1.6;
@@ -24,14 +29,6 @@
       padding: 0 20px;
     }
 
-    section {
-      padding: 70px 0;
-    }
-
-    h1, h2, h3 { margin: 0 0 12px }
-    p { margin: 0 0 16px; color: #333 }
-
-    /* === HEADER === */
     header {
       position: sticky;
       top: 0;
@@ -44,14 +41,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 14px 0;
+      padding: 12px 0;
     }
 
     .brand-logo {
       display: flex;
       align-items: center;
       text-decoration: none;
-      color: #111;
+      color: #0f3f3a;
       font-weight: 700;
       font-size: 1.1rem;
     }
@@ -65,91 +62,13 @@
       margin-left: 16px;
       text-decoration: none;
       color: #444;
+      font-weight: 500;
     }
 
     nav a:hover {
       color: #0f3f3a;
     }
 
-    /* === HERO === */
-    .hero {
-      background: #ffffff;
-    }
-
-    .hero h1 {
-      font-size: 2.4rem;
-      color: #0f3f3a;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-    }
-
-    .buttons a {
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      padding: 12px 18px;
-      border-radius: 10px;
-      text-decoration: none;
-      border: 1px solid #ccc;
-      color: #111;
-    }
-
-    .buttons a.primary {
-      background: #0f3f3a;
-      color: #fff;
-      border-color: #0f3f3a;
-    }
-
-    /* === GRID === */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 14px;
-      padding: 20px;
-    }
-
-    details {
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 14px;
-      margin-bottom: 10px;
-      background: #fff;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    /* === FORM === */
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      font-family: inherit;
-    }
-
-    form button {
-      padding: 12px 18px;
-      border: none;
-      border-radius: 10px;
-      background: #0f3f3a;
-      color: #fff;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    /* === FOOTER === */
     footer {
       border-top: 1px solid #e5e7eb;
       background: #fafafa;
@@ -164,7 +83,6 @@
       margin-bottom: 10px;
     }
 
-    /* === TOP BUTTON === */
     #topBtn {
       position: fixed;
       bottom: 20px;
@@ -188,7 +106,7 @@
 <header>
   <div class="container nav">
     <a class="brand-logo" href="#top">
-      <img src="logo.png" alt="Mercatora Logo">
+      <img src="mercatora_logo.png" alt="Mercatora Logo">
       Mercatora
     </a>
     <nav>
@@ -201,27 +119,14 @@
 </header>
 
 <main id="top">
-
-<section class="hero">
-  <div class="container">
-    <h1>Mercatora</h1>
-    <p>Kleingewerbe · Handel · Beratung · Projekte</p>
-    <div class="buttons">
-      <a class="primary" href="#kontakt">Kontakt aufnehmen</a>
-      <a href="#leistungen">Mehr erfahren</a>
-    </div>
-  </div>
-</section>
-
-<!-- ... alle weiteren Sektionen bleiben wie gehabt ... -->
-
+  <!-- Deine Sektionen hier -->
 </main>
 
 <a id="topBtn" href="#top">⬆</a>
 
 <footer>
   <div class="container">
-    <img src="logo.png" alt="Mercatora Logo">
+    <img src="mercatora_logo.png" alt="Mercatora Logo">
     <p><strong>Mercatora</strong> · Kleingewerbe</p>
     <p><a href="impressum.html">Impressum & Datenschutz</a></p>
     <p>© <span id="year"></span></p>
@@ -232,11 +137,7 @@
   document.getElementById("year").textContent = new Date().getFullYear();
   const btn = document.getElementById("topBtn");
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
-      btn.classList.add("show");
-    } else {
-      btn.classList.remove("show");
-    }
+    btn.classList.toggle("show", window.scrollY > 400);
   });
 </script>
 
