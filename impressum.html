@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Impressum & Datenschutz – Mercatora</title>
-  <link rel="icon" href="mercatora_logo_favicon.png" type="image/png">
+
+<!-- Favicon -->
+<link rel="icon" href="mercatora_logo_favicon.png" type="image/png">
+
 <meta name="description" content="Impressum und Datenschutzerklärung von Mercatora (Kleingewerbe).">
 
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
@@ -17,32 +21,42 @@ body{
   color:#111;
   line-height:1.6;
 }
+
 .container{
   max-width:900px;
   margin:0 auto;
   padding:24px;
 }
+
+/* ========= HEADER ========= */
 header{
   background:#fff;
   border-bottom:1px solid #e5e7eb;
 }
-header .container
-  
+
+header .container{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  header .container img 
-    width: 120px;
-    height: auto;
+}
+
+/* ✅ LOGO-GRÖSSE */
+header .container img{
+  height:120px;   /* <-- HIER die Logo-Größe */
+  width:auto;
 }
 
 a{color:#111}
+
 nav a{
   margin-left:14px;
   text-decoration:none;
   color:#444;
 }
+
 nav a:hover{color:#000}
+
+/* ========= CONTENT ========= */
 section{
   background:#fff;
   border:1px solid #e5e7eb;
@@ -50,17 +64,26 @@ section{
   padding:24px;
   margin-top:24px;
 }
-h1{margin-top:0}
-h2{margin-top:0}
+
+h1,h2{margin-top:0}
 h3{margin-top:18px}
-p{margin-bottom:12px;color:#333}
+
+p{
+  margin-bottom:12px;
+  color:#333;
+}
+
 ul{padding-left:20px}
+
+/* ========= FOOTER ========= */
 footer{
   margin:40px 0 20px;
   text-align:center;
   color:#666;
   font-size:.95rem;
 }
+
+/* ========= NOTE ========= */
 .note{
   background:#fff7ed;
   border:1px solid #fed7aa;
@@ -68,6 +91,8 @@ footer{
   border-radius:12px;
   margin-bottom:20px;
 }
+
+/* ========= TOP BUTTON ========= */
 .top{
   position:fixed;
   bottom:20px;
@@ -79,6 +104,7 @@ footer{
   text-decoration:none;
   display:none;
 }
+
 .top.show{display:block}
 </style>
 </head>
@@ -87,9 +113,7 @@ footer{
 
 <header>
   <div class="container">
-    
-          <img src="mercatora_logo.png" alt="Mercatora Logo">
-    <strong></strong>
+    <img src="mercatora_logo.png" alt="Mercatora Logo">
     <nav>
       <a href="/index.html">Startseite</a>
       <a href="#impressum">Impressum</a>
@@ -134,9 +158,7 @@ Verbraucherschlichtungsstelle teilzunehmen.
 
 <section id="kontakt">
 <h2>Kontakt</h2>
-<p>
-Bei Fragen zu dieser Website, zum Datenschutz oder zu Angeboten erreichst du mich unter:
-</p>
+<p>Bei Fragen erreichst du mich unter:</p>
 <ul>
   <li>E-Mail: <a href="mailto:kontakt@mercatora.eu">kontakt@mercatora.eu</a></li>
   <li>Telefon: 06063&nbsp;2090</li>
@@ -148,58 +170,15 @@ Bei Fragen zu dieser Website, zum Datenschutz oder zu Angeboten erreichst du mic
 
 <div class="note">
 Diese Website wird statisch über GitHub Pages betrieben.  
-Es werden keine Tracking-Tools, keine Werbung und keine Analyse-Dienste eingesetzt.
+Es werden keine Tracking-Tools eingesetzt.
 </div>
 
-<h3>1. Datenschutz auf einen Blick</h3>
+<h3>Hosting</h3>
 <p>
-Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen
-Daten passiert, wenn du diese Website besuchst.
+Beim Aufruf der Website werden Server-Log-Dateien erhoben (IP-Adresse, Datum, Uhrzeit).
 </p>
 
-<h3>2. Hosting</h3>
-<p>
-Diese Website wird bei GitHub Pages gehostet. Beim Aufruf der Seite werden durch den Hostinganbieter
-Server-Log-Dateien erhoben (IP-Adresse, Datum und Uhrzeit, Browsertyp).
-</p>
-<p>
-Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb).
-</p>
-
-<h3>3. Kontaktaufnahme</h3>
-<p>
-Wenn du mich per E-Mail, Telefon oder Kontaktformular kontaktierst, werden deine Angaben zur Bearbeitung
-der Anfrage verarbeitet. Diese Daten werden nicht ohne deine Einwilligung weitergegeben.
-</p>
-
-<h3>4. Newsletter</h3>
-<p>
-Wenn du dich für einen Newsletter anmeldest, wird deine E-Mail-Adresse ausschließlich für den Versand
-des Newsletters verwendet. Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung
-(Art. 6 Abs. 1 lit. a DSGVO). Du kannst den Newsletter jederzeit abbestellen.
-</p>
-
-<h3>5. Deine Rechte</h3>
-<ul>
-  <li>Auskunft über deine gespeicherten Daten</li>
-  <li>Berichtigung unrichtiger Daten</li>
-  <li>Löschung oder Einschränkung der Verarbeitung</li>
-  <li>Widerspruch gegen die Verarbeitung</li>
-  <li>Datenübertragbarkeit</li>
-</ul>
-
-<h3>6. SSL-/TLS-Verschlüsselung</h3>
-<p>
-Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.
-</p>
-
-<h3>7. Widerspruch gegen Werbe-E-Mails</h3>
-<p>
-Der Nutzung der im Impressum veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich
-angeforderter Werbung wird hiermit widersprochen.
-</p>
-
-<p><em>Quelle der rechtlichen Texte: eRecht24 (inhaltlich angepasst)</em></p>
+<p><em>Quelle der rechtlichen Texte: eRecht24 (angepasst)</em></p>
 </section>
 
 <footer>
