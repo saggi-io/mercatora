@@ -1,209 +1,69 @@
 <!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mercatora – Kleingewerbe</title>
-  <meta name="description" content="Mercatora – Kleingewerbe: Handel, Beratung, Projekte.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercatora – Handel, Projekte & digitale Lösungen</title>
+<meta name="description" content="Mercatora – strukturierter Handel, digitale Projekte und klare Lösungen.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" type="image/png" href="mercatora_logo_favicon.png">
+<link rel="apple-touch-icon" href="mercatora_logo_favicon.png">
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="mercatora_logo_favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="mercatora_logo_favicon.png">
-  <meta name="theme-color" content="#0f3f3a">
-
-  <style>
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:#f5f7fa;
-      color:#111111;
-      line-height:1.6;
-    }
-
-    .container{
-      max-width:1100px;
-      margin:0 auto;
-      padding:0 20px;
-    }
-
-    section{
-      padding:70px 0;
-    }
-
-    h1,h2,h3{
-      margin:0 0 12px;
-    }
-
-    p{
-      margin:0 0 16px;
-      color:#333;
-    }
-
-    /* ========= HEADER ========= */
-    header{
-      position:sticky;
-      top:0;
-      background:#ffffff;
-      border-bottom:1px solid #e5e7eb;
-      z-index:100;
-    }
-
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-    }
-
-    .brand{
-      display: flex;
-      align-items: center;
-      font-weight:700;
-      font-size:1.1rem;
-      text-decoration:none;
-      color:#111;
-    }
-
-    .brand img {
-      height: 240px; /* 3x größer als vorher */
-      margin-right: 10px;
-    }
-
-    nav a{
-      margin-left:16px;
-      text-decoration:none;
-      color:#444;
-    }
-
-    nav a:hover{
-      color:#000;
-    }
-
-    /* ========= HERO ========= */
-    .hero{
-      background:#ffffff;
-    }
-
-    .hero h1{
-      font-size:2.4rem;
-    }
-
-    .hero p{
-      font-size:1.1rem;
-    }
-
-    .buttons a{
-      display:inline-block;
-      margin-right:10px;
-      margin-top:10px;
-      padding:12px 18px;
-      border-radius:10px;
-      text-decoration:none;
-      border:1px solid #ccc;
-      color:#111;
-    }
-
-    .buttons a.primary{
-      background:#111;
-      color:#fff;
-      border-color:#111;
-    }
-
-    /* ========= GRID ========= */
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:20px;
-    }
-
-    .card{
-      background:#ffffff;
-      border:1px solid #e5e7eb;
-      border-radius:14px;
-      padding:20px;
-    }
-
-    /* ========= ACCORDION ========= */
-    details{
-      border:1px solid #e5e7eb;
-      border-radius:12px;
-      padding:14px;
-      margin-bottom:10px;
-      background:#fff;
-    }
-
-    summary{
-      cursor:pointer;
-      font-weight:600;
-    }
-
-    /* ========= FORM ========= */
-    form input, form textarea{
-      width:100%;
-      padding:12px;
-      margin-bottom:10px;
-      border-radius:10px;
-      border:1px solid #ccc;
-      font-family:inherit;
-    }
-
-    form button{
-      padding:12px 18px;
-      border:none;
-      border-radius:10px;
-      background:#111;
-      color:#fff;
-      font-size:1rem;
-      cursor:pointer;
-    }
-
-    /* ========= FOOTER ========= */
-    footer{
-      border-top:1px solid #e5e7eb;
-      background:#fafafa;
-      padding:40px 0;
-      font-size:0.95rem;
-      color:#555;
-      text-align:center;
-    }
-
-    footer img {
-      height: 40px;
-      margin-bottom: 10px;
-    }
-
-    /* ========= TOP BUTTON ========= */
-    #topBtn{
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      display:none;
-      padding:10px 14px;
-      border-radius:50%;
-      background:#111;
-      color:#fff;
-      text-decoration:none;
-    }
-
-    #topBtn.show{
-      display:block;
-    }
-  </style>
+<style>
+:root{
+  --bg:#f4f6f8;--surface:#ffffff;--surface-2:#f8fafc;--text:#0f172a;--muted:#475569;--line:#e2e8f0;
+  --brand:#0f172a;--brand-2:#1e293b;--accent:#bfa37a;--shadow:0 14px 40px rgba(15,23,42,.08);
+  --radius-xl:24px;--max:1200px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#f8fafc 0%, #f4f6f8 100%);color:var(--text);line-height:1.6}
+img{max-width:100%;display:block} a{color:inherit}
+.container{width:min(100% - 32px,var(--max));margin-inline:auto}
+.section{padding:88px 0}.section-tight{padding:64px 0}
+.section-label{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+.section-title,h1,h2,h3{margin:0 0 14px;line-height:1.1}.section-title{font-size:clamp(1.9rem,3vw,2.7rem)}
+p{margin:0 0 18px;color:var(--muted)}.lead{font-size:1.08rem;max-width:62ch}
+.site-header{position:sticky;top:0;z-index:1000;backdrop-filter:blur(14px);background:rgba(255,255,255,.82);border-bottom:1px solid rgba(226,232,240,.9)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:74px}
+.brand{display:flex;align-items:center;gap:14px;min-width:0;text-decoration:none}.brand-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));display:grid;place-items:center;overflow:hidden;box-shadow:var(--shadow)}
+.brand-mark img{width:100%;height:100%;object-fit:cover}.brand-name{display:block;font-weight:800;color:var(--text)}.brand-sub{display:block;color:var(--muted);font-size:.88rem}
+.nav-toggle{display:none;border:1px solid var(--line);background:#fff;color:var(--text);width:46px;height:46px;border-radius:12px;cursor:pointer}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{display:block;width:20px;height:2px;margin:auto;background:var(--text);content:"";border-radius:999px;position:relative}.nav-toggle span::before{top:-6px}.nav-toggle span::after{top:4px}
+.nav-menu{display:flex;align-items:center;gap:10px}.nav-menu a{text-decoration:none;padding:10px 14px;border-radius:999px;color:#334155;font-weight:600}.nav-menu a:hover{background:#eef2f7;color:#0f172a}
+.hero{padding:44px 0 32px}.hero-panel{position:relative;overflow:hidden;border-radius:32px;background:radial-gradient(circle at top right, rgba(191,163,122,.22), transparent 30%),linear-gradient(135deg,#0f172a 0%, #162235 55%, #1e293b 100%);color:#fff;box-shadow:var(--shadow)}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:34px;align-items:center;padding:clamp(28px,5vw,64px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid rgba(255,255,255,.12);border-radius:999px;background:rgba(255,255,255,.06);color:#e2e8f0;font-size:.9rem}
+.hero-copy h1{font-size:clamp(2.4rem,5vw,4.6rem);letter-spacing:-.04em}.hero-copy p{color:#d8e0ea}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 18px;border-radius:14px;text-decoration:none;border:1px solid transparent;font-weight:700;transition:.2s ease}.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:#fff;color:#0f172a}.btn-secondary{color:#fff;border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.06)}
+.hero-side{display:grid;gap:16px}.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:22px}.hero-list{display:grid;gap:12px}.hero-list-item{display:flex;gap:12px;align-items:flex-start}.hero-dot{flex:0 0 10px;width:10px;height:10px;border-radius:50%;background:var(--accent);margin-top:9px}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.kpi{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:18px}.kpi strong{display:block;font-size:1.4rem;color:#fff}.kpi span{color:#cbd5e1;font-size:.92rem}
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-xl);padding:24px;box-shadow:0 8px 24px rgba(15,23,42,.04)}.icon-badge{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#f8fafc;border:1px solid var(--line);font-size:1.2rem;margin-bottom:16px}
+.feature-layout{display:grid;grid-template-columns:1fr 1fr;gap:22px}.feature-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-xl);padding:28px}.subdomain-list{display:grid;gap:14px;margin-top:18px}.subdomain-item{display:flex;gap:14px;align-items:flex-start;padding:16px;border:1px solid var(--line);border-radius:18px;background:var(--surface-2)}.tag{display:inline-flex;align-items:center;padding:7px 10px;border-radius:999px;background:#eef2f7;color:#334155;font-size:.82rem;font-weight:700}
+.faq{display:grid;gap:12px}.faq details{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px 18px}.faq summary{cursor:pointer;font-weight:700;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq details p{margin:12px 0 0}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}.contact-card,.form-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-xl);padding:28px}.contact-points{display:grid;gap:14px;margin-top:20px}.contact-point{display:flex;gap:14px;align-items:flex-start}
+form{display:grid;gap:14px}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-size:.92rem;font-weight:700;margin-bottom:8px}input,textarea{width:100%;padding:14px 15px;border-radius:14px;border:1px solid #cbd5e1;background:#fff;font:inherit;color:var(--text)}textarea{min-height:160px;resize:vertical}.form-note{font-size:.92rem;color:#64748b}
+.site-footer{padding:34px 0 44px}.footer-panel{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 24px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.75)}.footer-links{display:flex;flex-wrap:wrap;gap:12px 18px}.footer-links a{text-decoration:none;color:#334155;font-weight:600}
+.top-btn{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;text-decoration:none;background:var(--brand);color:#fff;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s ease}.top-btn.show{opacity:1;visibility:visible;transform:translateY(0)}
+@media (max-width: 1024px){.hero-grid,.feature-layout,.contact-grid{grid-template-columns:1fr}.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 820px){.nav-toggle{display:grid;place-items:center}.nav-menu{position:absolute;left:16px;right:16px;top:82px;padding:14px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.98);box-shadow:var(--shadow);display:none;flex-direction:column;align-items:stretch}.nav-menu.open{display:flex}.kpi-grid,.form-row,.footer-panel{grid-template-columns:1fr;display:grid}}
+@media (max-width: 640px){.section{padding:72px 0}.section-tight{padding:52px 0}.card-grid{grid-template-columns:1fr}.container{width:min(100% - 22px,var(--max))}.hero-grid{padding:24px}.hero-copy h1{font-size:2.25rem}.brand-sub{display:none}.hero-actions .btn{width:100%}}
+</style>
 </head>
-
 <body>
-
-<header>
-  <div class="container nav">
-    <a class="brand" href="#top">
-      <img src="mercatora_logo.png" alt="Mercatora Logo">
-     
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#top" aria-label="Mercatora Startseite">
+      <span class="brand-mark"><img src="mercatora_logo.png" alt="Mercatora Logo"></span>
+      <span class="brand-text">
+        <span class="brand-name">Mercatora</span>
+        <span class="brand-sub">Handel · Projekte · digitale Lösungen</span>
+      </span>
     </a>
-    <nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menü öffnen"><span></span></button>
+    <nav class="nav-menu" id="navMenu">
       <a href="#leistungen">Leistungen</a>
-      <a href="#infos">Infos</a>
+      <a href="#bereiche">Bereiche</a>
       <a href="#ueber">Über uns</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
@@ -211,109 +71,134 @@
 </header>
 
 <main id="top">
-
-<section class="hero">
-  <div class="container">
-    <h1>Mercatora</h1>
-    <p>Kleingewerbe · Handel · Beratung · Projekte</p>
-    <div class="buttons">
-      <a class="primary" href="#kontakt">Kontakt aufnehmen</a>
-      <a href="#leistungen">Mehr erfahren</a>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-panel">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Mercatora · klar, hochwertig, strukturiert</span>
+            <h1>Digitale Präsenz mit Substanz statt Baukasten-Standard.</h1>
+            <p class="lead">Mercatora bündelt Handel, Projektideen und spezialisierte Themenwelten unter einer klaren Marke. Die Startseite bleibt bewusst fokussiert und verweist elegant auf spezialisierte Bereiche wie die SDK-Seite.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
+              <a class="btn btn-secondary" href="#bereiche">Bereiche ansehen</a>
+            </div>
+          </div>
+          <aside class="hero-side">
+            <div class="hero-card">
+              <h2 style="font-size:1.1rem; margin-bottom:14px;">Was diese Startseite leisten soll</h2>
+              <div class="hero-list">
+                <div class="hero-list-item"><span class="hero-dot"></span><div>Eleganter Auftritt für Browser, Mobile, Tablet und Notebook</div></div>
+                <div class="hero-list-item"><span class="hero-dot"></span><div>Klare Einstiege in Leistungen, Themenbereiche und Subdomains</div></div>
+                <div class="hero-list-item"><span class="hero-dot"></span><div>Sichtbare Rechtstexte und professionelle Kontaktwege</div></div>
+              </div>
+            </div>
+            <div class="kpi-grid">
+              <div class="kpi"><strong>Responsive</strong><span>Mobile bis Desktop</span></div>
+              <div class="kpi"><strong>Modular</strong><span>Für Subdomains vorbereitet</span></div>
+              <div class="kpi"><strong>Skalierbar</strong><span>Später mit Shop & Daten</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="leistungen">
-  <div class="container">
-    <h2>Leistungen</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Handel</h3>
-        <p>Ausgewählte Produkte und Waren im Rahmen des Kleingewerbes.</p>
-      </div>
-      <div class="card">
-        <h3>Beratung</h3>
-        <p>Strukturierte, praxisnahe Beratung ohne Buzzwords.</p>
-      </div>
-      <div class="card">
-        <h3>Projekte</h3>
-        <p>Projektbezogene Unterstützung von Planung bis Umsetzung.</p>
+  <section class="section" id="leistungen">
+    <div class="container">
+      <span class="section-label">Leistungen</span>
+      <h2 class="section-title">Ein sauberer Rahmen für mehrere Geschäftsfelder</h2>
+      <p class="lead">Die Startseite erklärt knapp, wofür Mercatora steht, ohne zu überladen. Tiefergehende Inhalte liegen in Unterseiten oder Subdomains.</p>
+      <div class="card-grid" style="margin-top:26px;">
+        <article class="card"><div class="icon-badge">▣</div><h3>Handel</h3><p>Ausgewählte Produkte, Sammlerstücke und thematische Angebote mit späterer Erweiterung in Richtung Shop, Anfrage oder Bezahlfunktion.</p></article>
+        <article class="card"><div class="icon-badge">◇</div><h3>Digitale Projekte</h3><p>Landingpages, Informationsseiten, strukturierte Inhalte und ausbaufähige Web-Lösungen mit klarer Nutzerführung.</p></article>
+        <article class="card"><div class="icon-badge">✦</div><h3>Beratung & Struktur</h3><p>Praxisnahe Begleitung bei Konzept, Aufbau, Darstellung und Ordnung von Angeboten, Daten und Web-Inhalten.</p></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="infos">
-  <div class="container">
-    <h2>Weitere Informationen</h2>
+  <section class="section-tight" id="bereiche">
+    <div class="container">
+      <div class="feature-layout">
+        <div class="feature-panel">
+          <span class="section-label">Bereiche</span>
+          <h2 class="section-title">Mercatora als Dach für spezialisierte Themen</h2>
+          <p>Statt alles auf einer Seite zu vermischen, dient Mercatora als zentrale Marke. Einzelne Themen bekommen eigene Einstiege, eigene Schwerpunkte und bei Bedarf eigene Rechtstexte.</p>
+          <div class="subdomain-list">
+            <div class="subdomain-item"><div><strong>mercatora.eu</strong><p>Zentrale Startseite mit Überblick, Kontakt, Leistungen und Verweisen auf spezialisierte Teilbereiche.</p></div></div>
+            <div class="subdomain-item"><div><strong>sdk.mercatora.eu</strong><p>Eigener Bereich für St. Kilian, Whisky, Samples, Geschenkideen und die eingebundene Flaschenliste.</p><div class="hero-actions" style="margin-top:14px;"><a class="btn btn-primary" href="sdk.html">Zur SDK-Seite</a></div></div></div>
+          </div>
+        </div>
+        <div class="feature-panel">
+          <span class="tag">Für den nächsten Schritt vorbereitet</span>
+          <h3 style="margin-top:16px;">Was der SDK-Bereich übernimmt</h3>
+          <div class="faq" style="margin-top:16px;">
+            <details open><summary>Whisky, Samples und Geschenkideen</summary><p>Die spezialisierten Produkte werden auf der SDK-Seite konzentriert dargestellt und nicht auf der Hauptseite vermischt.</p></details>
+            <details><summary>Eingebundene Flaschenliste</summary><p>Die breite Google-Sheet-Ansicht bleibt ausschließlich im SDK-Bereich und hält die Hauptseite schlank.</p></details>
+            <details><summary>Öffentliche Ansicht, geschützte Bestellung</summary><p>Gäste sehen die Inhalte, während Bestell- oder Anfragefunktionen später an Freigaben gekoppelt werden können.</p></details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <details>
-      <summary>Arbeitsweise</summary>
-      <p>Direkte Kommunikation, klare Schritte, nachvollziehbare Ergebnisse.</p>
-    </details>
+  <section class="section" id="ueber">
+    <div class="container">
+      <span class="section-label">Über uns</span>
+      <h2 class="section-title">Ruhiger Auftritt, klare Struktur, ausbaufähige Technik</h2>
+      <div class="card" style="padding:32px;">
+        <p class="lead">Mercatora steht für eine sachliche, elegante und belastbare Web-Präsenz. Ziel ist ein hochwertiger Auftritt mit klaren Kontaktwegen und sauberem Ausbaupfad.</p>
+        <p>Diese Version konzentriert sich bewusst auf Layout, Typografie, Abstände, Navigation und einen professionellen Gesamteindruck. Spezielle Produkt- und Datenbereiche liegen ausgelagert in den jeweiligen Unterseiten.</p>
+      </div>
+    </div>
+  </section>
 
-    <details>
-      <summary>Themen & Schwerpunkte</summary>
-      <p>Handel, Prozesse, Digitalisierung, Organisation.</p>
-    </details>
-
-    <details>
-      <summary>FAQ</summary>
-      <p>Fragen zu Ablauf, Umfang und Zusammenarbeit.</p>
-    </details>
-  </div>
-</section>
-
-<section id="ueber">
-  <div class="container">
-    <h2>Über uns</h2>
-    <p>
-      Mercatora steht für sachliche, strukturierte und verlässliche Arbeit.
-      Fokus liegt auf umsetzbaren Lösungen und klarer Kommunikation.
-    </p>
-  </div>
-</section>
-
-<section id="kontakt">
-  <div class="container">
-    <h2>Kontakt</h2>
-
-    <form action="mailto:kontakt@mercatora.eu" method="post" enctype="text/plain">
-      <input name="name" placeholder="Name" required>
-      <input name="email" type="email" placeholder="E-Mail" required>
-      <textarea name="message" placeholder="Nachricht" required></textarea>
-      <button type="submit">Senden</button>
-    </form>
-
-    <p style="margin-top:10px;">
-      Oder direkt per E-Mail:
-      <a href="mailto:kontakt@mercatora.eu">kontakt@mercatora.eu</a>
-    </p>
-  </div>
-</section>
-
+  <section class="section-tight" id="kontakt">
+    <div class="container">
+      <span class="section-label">Kontakt</span>
+      <h2 class="section-title">Direkter Kontakt und klarer nächster Schritt</h2>
+      <div class="contact-grid" style="margin-top:26px;">
+        <div class="contact-card">
+          <h3>Kontaktmöglichkeiten</h3>
+          <p>Hier sollten E-Mail, Kontaktformular und rechtliche Links sofort auffindbar sein.</p>
+          <div class="contact-points">
+            <div class="contact-point"><div class="icon-badge" style="margin:0;">@</div><div><strong>E-Mail</strong><a href="mailto:kontakt@mercatora.eu">kontakt@mercatora.eu</a></div></div>
+            <div class="contact-point"><div class="icon-badge" style="margin:0;">§</div><div><strong>Rechtliches</strong><a href="impressum.html">Impressum & Datenschutz</a></div></div>
+            <div class="contact-point"><div class="icon-badge" style="margin:0;">↗</div><div><strong>Spezialbereich</strong>SDK mit Whisky-Liste, Produktkarten und späterer Anfrage- oder Kauflogik.</div></div>
+          </div>
+          <div class="hero-actions" style="margin-top:24px;"><a class="btn btn-primary" href="mailto:kontakt@mercatora.eu">E-Mail senden</a></div>
+        </div>
+        <div class="form-card">
+          <h3>Kontaktformular</h3>
+          <p class="form-note">Für den Live-Betrieb ist ein echtes Formular-Backend besser als <code>mailto:</code>. Das Layout ist dafür vorbereitet.</p>
+          <form action="mailto:kontakt@mercatora.eu" method="post" enctype="text/plain">
+            <div class="form-row"><div><label for="name">Name</label><input id="name" name="name" placeholder="Ihr Name" required></div><div><label for="email">E-Mail</label><input id="email" name="email" type="email" placeholder="ihre@email.de" required></div></div>
+            <div><label for="subject">Betreff</label><input id="subject" name="subject" placeholder="Worum geht es?"></div>
+            <div><label for="message">Nachricht</label><textarea id="message" name="message" placeholder="Ihre Nachricht" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Nachricht senden</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
-<a id="topBtn" href="#top">⬆</a>
-
-<footer>
+<footer class="site-footer">
   <div class="container">
-    <img src="mercatora_logo.png" alt="Mercatora Logo">
-    <p><strong>Mercatora</strong> · Kleingewerbe</p>
-    <p>
-      <a href="impressum.html">Impressum & Datenschutz</a>
-    </p>
-    <p>© <span id="year"></span></p>
+    <div class="footer-panel">
+      <div><strong>Mercatora</strong><p style="margin:6px 0 0;">Handel, Projekte und spezialisierte digitale Themenwelten.</p></div>
+      <div class="footer-links"><a href="#leistungen">Leistungen</a><a href="#bereiche">Bereiche</a><a href="#kontakt">Kontakt</a><a href="impressum.html">Impressum</a><a href="impressum.html#datenschutz">Datenschutz</a></div>
+      <div style="color:#64748b;">© <span id="year"></span></div>
+    </div>
   </div>
 </footer>
-
+<a class="top-btn" id="topBtn" href="#top" aria-label="Nach oben">↑</a>
 <script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-  const btn = document.getElementById("topBtn");
-  window.addEventListener("scroll", () => {
-    btn.classList.toggle("show", window.scrollY > 400);
-  });
+const navToggle=document.getElementById('navToggle'); const navMenu=document.getElementById('navMenu'); const topBtn=document.getElementById('topBtn');
+document.getElementById('year').textContent=new Date().getFullYear();
+navToggle?.addEventListener('click',()=>{const isOpen=navMenu.classList.toggle('open');navToggle.setAttribute('aria-expanded',String(isOpen));});
+navMenu?.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navMenu.classList.remove('open');navToggle.setAttribute('aria-expanded','false');}));
+window.addEventListener('scroll',()=>{if(window.scrollY>450){topBtn.classList.add('show')}else{topBtn.classList.remove('show')}});
 </script>
-
 </body>
 </html>
