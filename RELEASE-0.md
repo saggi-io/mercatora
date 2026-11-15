@@ -6,7 +6,7 @@ Stand: 15. November 2026. Entwurf zur Abnahme, nicht live veröffentlicht.
 
 Bestehende statische Website im verifizierten Repository `saggi-io/mercatora` überarbeitet. B2B-Fokus: Kleingewerbe, Selbstständige, Mittelstand und Vereine. Leistungen: KI-Lösungen, App-Entwicklung, Automatisierung, Projektplanung und Umsetzung. Keine beworbene Website-Optimierung, kein Titel „KI-Ingenieur“, keine Bewertungen, Erfolgskennzahlen oder erfundenen Preise.
 
-Die Projekte BDKNG, Kinnicher FFC und Kabine sind als kommende Projektvorstellungen enthalten. Es wird keine konkrete Leistung als fertig dargestellt. Die Seite kann nach Freigabe auch in diesem zurückhaltenden Zustand starten; ausführliche Fallstudien sind kein technischer Release-Blocker.
+Die Referenzsektion und ihr Navigationseintrag wurden auf Wunsch des Inhabers vollständig entfernt. Die bisherigen Projekte wurden privat entwickelt und werden derzeit nicht als Unternehmensreferenzen beworben. Für spätere interne Planung gilt der Name „FFC Cockpit“ statt „Kabine“; daraus entsteht keine neue Referenzbehauptung.
 
 Handel und Whiskybereich bleiben erreichbar. Die bisherige Google-Flaschenliste bleibt unverändert verlinkt. Beispielpreise, unbelegte Flaschenzahl und vorgetäuschte Kauf-/Freigabefunktionen wurden entfernt. Google-Inhalte werden erst nach einem bewussten Linkaufruf geladen.
 
@@ -63,7 +63,7 @@ Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Sc
 | SEO | Titel, Beschreibungen, kanonische Startseitenadresse, robots.txt, gültige XML-Sitemap |
 | Basisabsicherung | Keine Formulareingaben, kein JavaScript, kein Tracking, keine automatischen Drittanbieter-Einbettungen; restriktive Meta-CSP und Referrer-Vorgabe |
 | Browserkonsole | Bei den geprüften lokalen Seiten keine Warnungen/Fehler gemeldet |
-| Kontakt | E-Mail- und Telefonlinks korrekt; tatsächlicher Versand/Empfang und Telefonannahme nicht getestet |
+| Kontakt | E-Mail- und Telefonlinks korrekt; info@mercatora.eu vom Inhaber als funktionierend bestätigt. Rufnummer und Anschrift bestätigt; telefonisch derzeit Anrufbeantworter. Kein eigener Testversand und kein Testanruf durchgeführt |
 | Externe Links | Bestehende Google-Listenadresse übernommen; Freigaben und Inhalt der Liste nicht verändert oder als geprüft dargestellt |
 | Rechtstexte | Bestandsangaben übernommen; § 5 TMG auf § 5 DDG aktualisiert; Datenschutzhinweise an lokalen Schriftbezug und Link statt Google-Einbettung angepasst |
 
@@ -72,10 +72,11 @@ Die Prüfungen sind eine Basisprüfung, kein vollständiges Barrierefreiheits-, 
 ## Kurze Freigabe-Checkliste
 
 - [ ] Gestaltung und B2B-Texte freigeben.
-- [ ] `kontakt@mercatora.eu` sowie `info@mercatora.eu` auf tatsächlichen Empfang prüfen; eine eigene Testmail senden und Eingang bestätigen.
-- [ ] Felix Sagmeister, Bleichstraße 10, 64732 Bad König, Telefon 06063 2090, Fax und Kleinunternehmerangabe im Impressum bestätigen bzw. korrigieren.
+- [x] `info@mercatora.eu` vom Inhaber als funktionierend bestätigt und als Kontaktadresse auf allen Seiten eingesetzt. `kontakt@mercatora.eu` bleibt ungeklärt und wird nicht mehr verwendet.
+- [x] Anschrift und Telefon 06063 2090 vom Inhaber bestätigt; Hinweis auf den derzeitigen Anrufbeantworter ergänzt.
+- [ ] Fax und Kleinunternehmerangabe im Impressum abschließend bestätigen bzw. korrigieren.
 - [ ] Datenschutzhinweise insbesondere zu Hosting, internationaler Übermittlung und tatsächlicher Kontaktverarbeitung abschließend prüfen.
-- [ ] Projektvorstellungen vorerst ohne Leistungsnachweis freigeben oder pro Projekt die tatsächlich abgeschlossene Leistung nennen.
+- [x] Referenzsektion vollständig entfernt, entsprechend der Entscheidung des Inhabers.
 - [ ] Sicherheitsfund behandeln: Im öffentlichen Bestand lag eine Datei mit 2FA-Backup-Codes. Sie ist aus dem Release-Baum entfernt, bleibt aber in der bisherigen öffentlichen Historie. Codes beim Anbieter erneuern, danach historische Entfernung und gegebenenfalls weitere Bereinigung planen. Keine Codes in die Freigabeantwort kopieren.
 - [ ] Pages-Konfiguration und Veröffentlichungsweg im zugehörigen GitHub-Konto bestätigen; danach ausdrücklich den Live-Publish dieses Entwurfs freigeben.
 
@@ -87,7 +88,8 @@ Die Live-Seite, der Hauptbranch und BDKNG wurden nicht verändert. Nach Freigabe
 |---|---|---|
 | Sprint 0 · Vorbereitung | Bestand verstehen, sichern, Zugang und Risiken erfassen | Repositorybeleg, Backup, separater Branch |
 | Release 0 · heutiger Umfang | Seriöse B2B-Startseite als Ziel des BDKNG-Footerlinks | Vorschau, Basistests, Kontakt-/Rechtsprüfung, ausdrückliche Live-Freigabe |
-| Nächster kleiner Sprint | Verifizierte Projektvorstellungen ergänzen | Konkrete Leistungen und Bilder vom Inhaber bestätigt |
+| Späterer Backlog | Telefonansage und mögliche KI-gestützte Anrufabfrage prüfen | Umfang, Telefonanbieter, Datenschutz und Freigabe vor Umsetzung klären |
+| Späterer Backlog | Etwaige Vorstellung von FFC Cockpit und weiteren Projekten | Private Entwicklung und Unternehmensleistungen sauber zuordnen; nur nach ausdrücklicher Freigabe |
 | Separater Folgepunkt | 1–3 eBay-Artikel vorbereiten | Artikel, Zustand, Preis und Verkaufsbedingungen einzeln klären; blockiert Release 0 nicht |
 
 Der Inhaber priorisiert und nimmt ab; Umsetzung und Tests werden pro Etappe dokumentiert. Keine Shop-, Social-Account- oder Inbox-Entwicklung in diesem Release.
