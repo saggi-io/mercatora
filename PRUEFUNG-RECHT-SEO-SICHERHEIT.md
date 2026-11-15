@@ -10,7 +10,7 @@ Impressum und Datenschutz wurden nochmals überarbeitet. Die Anbieterangaben ent
 
 **Noch zwingend zu klären:** Ob und welche USt-IdNr. oder W-IdNr. zugeteilt wurde. Eine solche Nummer gehört bei Vorhandensein gemäß § 5 Abs. 1 Nr. 6 DDG ins Impressum – auch bei Kleinunternehmern. Keine persönliche Steuer-ID oder normale Steuernummer veröffentlichen. Im Entwurf steht keine erfundene Nummer.
 
-IONOS wurde vom Inhaber als direkt genutzter E-Mail-Anbieter bestätigt und in den Datenschutzhinweisen ergänzt. Sprachnachrichten über die FRITZ!Box werden ebenfalls beschrieben. Ausschließlich lokale Speicherung wird nicht behauptet: Ein möglicher E-Mail-Versand von AB-Nachrichten ist noch zu bestätigen. Der IONOS-Vertrag zur Auftragsverarbeitung und eventuelle zusätzliche Mail-/Telefonverarbeitung wurden nicht im Kundenkonto geprüft.
+IONOS wurde vom Inhaber als direkt genutzter E-Mail-Anbieter bestätigt und in den Datenschutzhinweisen ergänzt. Sprachnachrichten über die FRITZ!Box werden ebenfalls beschrieben. Ausschließlich lokale Speicherung wird nicht behauptet: Der Inhaber hat den Versand der AB-Nachrichten per E-Mail über IONOS bestätigt; dies wurde in den Datenschutzhinweisen ausdrücklich ergänzt. Der IONOS-Vertrag zur Auftragsverarbeitung und eventuelle zusätzliche Mail-/Telefonverarbeitung wurden nicht im Kundenkonto geprüft.
 
 Die Datenschutzhinweise behandeln Verantwortlichkeit, Hosting, Kontaktzwecke, Rechtsgrundlagen, Löschkriterien, Betroffenenrechte, Beschwerdemöglichkeit, freiwillige Datenangaben sowie das Fehlen einer automatisierten Entscheidung durch die Website. GitHub weist auf internationale Übermittlungen hin; die Erklärung nennt hierfür die vom Anbieter beschriebenen Mechanismen. Eine feste Aufbewahrungsfrist für Pages-IP-Protokolle wurde nicht erfunden. Der separate Whiskybereich verlinkt Google erst nach einem bewussten Klick; es gibt keine automatische Einbettung.
 
@@ -59,7 +59,7 @@ Der neue lokale Build `scripts/build-site.py` kopiert ausschließlich festgelegt
 
 ## Abnahmegrenze
 
-Die Website wurde technisch und inhaltlich anhand des bekannten Sachstands geprüft. Eine Aussage „rechtssicher und gegen alle Angriffe geschützt“ wäre nicht belegt. Vor Live-Freigabe bleiben insbesondere die ID-Angabe, mögliche AB-Weiterleitung, Auftragsverarbeitung, Domainverifizierung, Erneuerung betroffener Codes und die Auswahl des tatsächlichen Veröffentlichungswegs offen. Keine andere Website, kein anderer Server und keine Domainkonfiguration wurden geändert.
+Die Website wurde technisch und inhaltlich anhand des bekannten Sachstands geprüft. Eine Aussage „rechtssicher und gegen alle Angriffe geschützt“ wäre nicht belegt. Vor Live-Freigabe bleiben insbesondere die nachzureichende USt-ID, Auftragsverarbeitung, Domainverifizierung, Erneuerung betroffener Codes und die Auswahl des tatsächlichen Veröffentlichungswegs offen. Keine andere Website, kein anderer Server und keine Domainkonfiguration wurden geändert.
 
 ## Primärquellen
 
@@ -74,3 +74,5 @@ Die Website wurde technisch und inhaltlich anhand des bekannten Sachstands gepr�
 - Google Canonicals: https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls
 - OWASP HTTP-Schutzheader: https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Headers_Cheat_Sheet.html
 - CSP: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy
+
+Nachtrag: Der Inhaber reicht die VAT-/USt-ID nach. Bis dahin bleibt sie im Impressum ohne Platzhalternummer offen. Die AB-Weiterleitung über IONOS wurde bestätigt.

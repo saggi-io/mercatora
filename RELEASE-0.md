@@ -77,8 +77,8 @@ GitHub Pages erlaubt nicht alle zusätzlichen HTTP-Sicherheitsheader über Websi
 - [x] `info@mercatora.eu` vom Inhaber als funktionierend bestätigt und als Kontaktadresse auf allen Seiten eingesetzt. `kontakt@mercatora.eu` bleibt ungeklärt und wird nicht mehr verwendet.
 - [x] Anschrift und Telefon 06063 2090 vom Inhaber bestätigt; Hinweis auf den derzeitigen Anrufbeantworter ergänzt.
 - [x] Unbestätigte Faxangabe entfernt; Kleinunternehmerregelung nach Inhaberangaben mit § 19 UStG benannt.
-- [ ] Vorhandene USt-IdNr. / W-IdNr. klären und gegebenenfalls im Impressum ergänzen.
-- [ ] Datenschutzhinweise abschließend prüfen: IONOS-Mail bestätigt und ergänzt; FRITZ!Box-Anrufbeantworter beschrieben. Möglicher E-Mail-Versand der Aufnahmen und AVV noch zu prüfen.
+- [ ] Vom Inhaber angekündigte VAT-/USt-ID nachreichen und im Impressum ergänzen.
+- [ ] Datenschutzhinweise abschließend prüfen: IONOS-Mail bestätigt und ergänzt; FRITZ!Box-Anrufbeantworter beschrieben. E-Mail-Versand der Aufnahmen über IONOS bestätigt und ergänzt; AVV noch zu prüfen.
 - [x] Referenzsektion vollständig entfernt, entsprechend der Entscheidung des Inhabers.
 - [ ] Sicherheitsfund behandeln: Im öffentlichen Bestand lag eine Datei mit 2FA-Backup-Codes. Sie ist aus dem Release-Baum entfernt, bleibt aber in der bisherigen öffentlichen Historie. Codes beim Anbieter erneuern, danach historische Entfernung und gegebenenfalls weitere Bereinigung planen. Keine Codes in die Freigabeantwort kopieren.
 - [ ] Pages-Konfiguration und Veröffentlichungsweg im zugehörigen GitHub-Konto bestätigen; danach ausdrücklich den Live-Publish dieses Entwurfs freigeben.
