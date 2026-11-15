@@ -14,12 +14,12 @@ Handel und Whiskybereich bleiben erreichbar. Die bisherige Google-Flaschenliste 
 
 - Repository: https://github.com/saggi-io/mercatora
 - Ausgangscommit: `1eb05bcca569be34be80d3785d8776f3cdf33708`
-- Getrennter lokaler Branch: `release/0-2026-11-15`
+- Getrennter Branch: `release/0-2026-11-15`, lokal angelegt und nach GitHub übertragen: https://github.com/saggi-io/mercatora/tree/release/0-2026-11-15
 - `CNAME` enthält `www.mercatora.eu`; `www` verweist per DNS auf `saggi-io.github.io`.
 - Live-Startseite liefert HTTP 200 mit `Server: GitHub.com`; Struktur und Inhalte stimmen mit dem Repository überein.
 - HTTP sowie HTTPS ohne „www“ liefern eine 301-Weiterleitung auf `https://www.mercatora.eu/`, danach HTTP 200. Zertifikatsprüfung beim Abruf erfolgreich; kein unsicherer Abruf verwendet.
 - Statisches HTML/CSS; kein Anwendungsserver, kein Shop-Backend, kein funktionierender Formularserver im Bestand.
-- Öffentliche Pages-Konfigurations-API liefert 404; konkrete Deployment-Einstellungen und Schreibzugriff wurden damit nicht bestätigt. Vor Merge/Veröffentlichung Pages-Quellbranch im GitHub-Konto prüfen.
+- Öffentliche Pages-Konfigurations-API liefert 404; konkrete Deployment-Einstellungen wurden damit nicht bestätigt. Git-Schreibzugriff auf den getrennten Branch wurde durch erfolgreichen Push bestätigt. Vor Merge/Veröffentlichung Pages-Quellbranch im GitHub-Konto prüfen.
 - Erste Repository-Listen beider Kontoverbindungen zeigten Mercatora nicht. Erst die gezielte Suche nach `user:saggi-io` fand das passende Repository. Keine Zuordnung zu „one“ oder „spieltag-app“ vorgenommen.
 - Mail-Domain besitzt IONOS-MX-Einträge. Das belegt keinen Empfang eines bestimmten Postfachs.
 - Das genannte Arbeitsbriefing unter `/mnt/data/…` war nicht vorhanden. Die referenzierte Unterhaltung wurde gelesen; ihre alten Assistentenantworten waren nur als Inhaltsverweise verfügbar. Basis ist deshalb das vollständige Briefing der aktuellen Anfrage.
@@ -31,6 +31,8 @@ Handel und Whiskybereich bleiben erreichbar. Die bisherige Google-Flaschenliste 
 - `Mercatora-Release-0.zip`: Website und lokale Schriften, ohne Git-Historie oder Zugangsdaten. Zum lokalen Testen entpacken, `Vorschau-starten.cmd` starten und im Browser `http://127.0.0.1:8766` öffnen. Zum Beenden das Konsolenfenster schließen.
 - `Mercatora-Bestand-vor-Release-0.zip`: teilbares Backup der ursprünglichen Website-Dateien. Historie, sensible Altdatei und nicht benötigte alte ZIP-/PDF-Dateien sind bewusst ausgeschlossen.
 - Vollständiges Git-Bundle und Live-HTML/HTTP-Belege liegen ausschließlich im Arbeitsverzeichnis `work/`. Das Bundle enthält sensible historische Altbestände und darf nicht veröffentlicht oder als Website hochgeladen werden.
+
+Der Branch wurde erfolgreich übertragen. Das Anlegen eines Draft-Pull-Requests über die GitHub-Verbindung scheiterte an fehlender Integrationsberechtigung (HTTP 403). Ein PR ist daher nicht angelegt; der Branch ist direkt prüfbar.
 
 ## Gestaltung für Website und Canva
 
