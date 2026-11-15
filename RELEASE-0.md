@@ -47,7 +47,7 @@ Der Branch wurde erfolgreich übertragen. Das Anlegen eines Draft-Pull-Requests 
 | Fließtext | Inter, 400–700 |
 | Stil | Ruhig, großzügige Abstände, klare Linien, sparsame Rundungen |
 
-Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Schriftvorgaben lassen sich direkt in Canva übernehmen. Ein vorhandenes Canva-Brand-Kit war nicht benannt und wurde nicht verändert oder als geprüft ausgegeben. Der bestehende Bildbestand und das Favicon bleiben erhalten; im Seitenkopf steht eine schlichte typografische M-Marke mit Wortmarke.
+Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Schriftvorgaben lassen sich direkt in Canva übernehmen. Ein vorhandenes Canva-Brand-Kit war nicht benannt und wurde nicht verändert oder als geprüft ausgegeben. Der bestehende Bildbestand und das Favicon bleiben erhalten; im Seitenkopf ist auf ausdrücklichen Wunsch das vorhandene echte Bildlogo eingebunden. Der Menülink „Handel & Whisky“ wurde entfernt; die Bereiche selbst bleiben erhalten.
 
 ## Prüfungen
 
