@@ -8,7 +8,7 @@ Bestehende statische Website im verifizierten Repository `saggi-io/mercatora` ü
 
 Die Referenzsektion und ihr Navigationseintrag wurden auf Wunsch des Inhabers vollständig entfernt. Die bisherigen Projekte wurden privat entwickelt und werden derzeit nicht als Unternehmensreferenzen beworben. Für spätere interne Planung gilt der Name „FFC Cockpit“ statt „Kabine“; daraus entsteht keine neue Referenzbehauptung.
 
-Handel und Whiskybereich bleiben erreichbar. Die bisherige Google-Flaschenliste bleibt unverändert verlinkt. Beispielpreise, unbelegte Flaschenzahl und vorgetäuschte Kauf-/Freigabefunktionen wurden entfernt. Google-Inhalte werden erst nach einem bewussten Linkaufruf geladen.
+Handel und Whisky werden auf der Hauptseite vorerst vollständig ausgeblendet. Die separate Whisky-Unterseite bleibt erhalten. Die bisherige Google-Flaschenliste bleibt unverändert verlinkt. Beispielpreise, unbelegte Flaschenzahl und vorgetäuschte Kauf-/Freigabefunktionen wurden entfernt. Google-Inhalte werden erst nach einem bewussten Linkaufruf geladen.
 
 ## Nachgewiesener Bestand
 
@@ -47,7 +47,7 @@ Der Branch wurde erfolgreich übertragen. Das Anlegen eines Draft-Pull-Requests 
 | Fließtext | Inter, 400–700 |
 | Stil | Ruhig, großzügige Abstände, klare Linien, sparsame Rundungen |
 
-Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Schriftvorgaben lassen sich direkt in Canva übernehmen. Ein vorhandenes Canva-Brand-Kit war nicht benannt und wurde nicht verändert oder als geprüft ausgegeben. Der bestehende Bildbestand und das Favicon bleiben erhalten; im Seitenkopf ist auf ausdrücklichen Wunsch das vorhandene echte Bildlogo eingebunden. Der Menülink „Handel & Whisky“ wurde entfernt; die Bereiche selbst bleiben erhalten.
+Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Schriftvorgaben lassen sich direkt in Canva übernehmen. Ein vorhandenes Canva-Brand-Kit war nicht benannt und wurde nicht verändert oder als geprüft ausgegeben. Der bestehende Bildbestand und das Favicon bleiben erhalten; im Seitenkopf ist auf ausdrücklichen Wunsch das vorhandene echte Bildlogo eingebunden. Der Menülink „Handel & Whisky“ und die gesamte Bereichssektion auf der Hauptseite wurden entfernt; die separate SDK-Unterseite bleibt erhalten.
 
 ## Prüfungen
 
@@ -67,15 +67,18 @@ Beide Schriften sind lokal eingebunden; Lizenztexte liegen bei. Die Farb- und Sc
 | Externe Links | Bestehende Google-Listenadresse übernommen; Freigaben und Inhalt der Liste nicht verändert oder als geprüft dargestellt |
 | Rechtstexte | Bestandsangaben übernommen; § 5 TMG auf § 5 DDG aktualisiert; Datenschutzhinweise an lokalen Schriftbezug und Link statt Google-Einbettung angepasst |
 
-Die Prüfungen sind eine Basisprüfung, kein vollständiges Barrierefreiheits-, Rechts- oder Sicherheitsaudit. GitHub Pages erlaubt nicht alle zusätzlichen HTTP-Sicherheitsheader über Website-Dateien. Insbesondere ist eine Meta-CSP kein Ersatz für einen serverseitigen `frame-ancestors`-Header. Es wurde keine Serverkonfiguration verändert.
+Die Prüfungen sind eine Basisprüfung, kein vollständiges Barrierefreiheits-, Rechts- oder Sicherheitsaudit. Die zweite ausführliche Prüfung ist in `PRUEFUNG-RECHT-SEO-SICHERHEIT.md` dokumentiert. Die bekannte gewünschte SDK-Subdomain ist aktuell nicht im DNS vorhanden. Die ursprüngliche Live-Seite liefert robots.txt und sitemap.xml jeweils mit 404; die Entwurfsdateien sind nicht live. Ein neuer Build gibt ausschließlich öffentliche Website-Dateien nach `_site` aus; die Vorschau verwendet diesen Ausgabeordner. Vor Veröffentlichung muss der Hosting-Modus auf genau dieses Artefakt ausgerichtet werden.
+
+GitHub Pages erlaubt nicht alle zusätzlichen HTTP-Sicherheitsheader über Website-Dateien. Insbesondere ist eine Meta-CSP kein Ersatz für einen serverseitigen `frame-ancestors`-Header. Es wurde keine Serverkonfiguration verändert.
 
 ## Kurze Freigabe-Checkliste
 
 - [ ] Gestaltung und B2B-Texte freigeben.
 - [x] `info@mercatora.eu` vom Inhaber als funktionierend bestätigt und als Kontaktadresse auf allen Seiten eingesetzt. `kontakt@mercatora.eu` bleibt ungeklärt und wird nicht mehr verwendet.
 - [x] Anschrift und Telefon 06063 2090 vom Inhaber bestätigt; Hinweis auf den derzeitigen Anrufbeantworter ergänzt.
-- [ ] Fax und Kleinunternehmerangabe im Impressum abschließend bestätigen bzw. korrigieren.
-- [ ] Datenschutzhinweise insbesondere zu Hosting, internationaler Übermittlung und tatsächlicher Kontaktverarbeitung abschließend prüfen.
+- [x] Unbestätigte Faxangabe entfernt; Kleinunternehmerregelung nach Inhaberangaben mit § 19 UStG benannt.
+- [ ] Vorhandene USt-IdNr. / W-IdNr. klären und gegebenenfalls im Impressum ergänzen.
+- [ ] Datenschutzhinweise abschließend prüfen: IONOS-Mail bestätigt und ergänzt; FRITZ!Box-Anrufbeantworter beschrieben. Möglicher E-Mail-Versand der Aufnahmen und AVV noch zu prüfen.
 - [x] Referenzsektion vollständig entfernt, entsprechend der Entscheidung des Inhabers.
 - [ ] Sicherheitsfund behandeln: Im öffentlichen Bestand lag eine Datei mit 2FA-Backup-Codes. Sie ist aus dem Release-Baum entfernt, bleibt aber in der bisherigen öffentlichen Historie. Codes beim Anbieter erneuern, danach historische Entfernung und gegebenenfalls weitere Bereinigung planen. Keine Codes in die Freigabeantwort kopieren.
 - [ ] Pages-Konfiguration und Veröffentlichungsweg im zugehörigen GitHub-Konto bestätigen; danach ausdrücklich den Live-Publish dieses Entwurfs freigeben.
