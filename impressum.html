@@ -1,106 +1,45 @@
-
 <!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#112338">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<link rel="icon" href="mercatora_logo_favicon.png">
+<link rel="stylesheet" href="assets/site.css">
 <title>Impressum & Datenschutz – Mercatora</title>
-<meta name="description" content="Impressum und Datenschutzerklärung von Mercatora (Kleingewerbe).">
-
-<style>
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  background:#f5f7fa;
-  color:#111;
-  line-height:1.6;
-}
-.container{
-  max-width:900px;
-  margin:0 auto;
-  padding:24px;
-}
-header{
-  background:#fff;
-  border-bottom:1px solid #e5e7eb;
-}
-header .container{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-a{color:#111}
-nav a{
-  margin-left:14px;
-  text-decoration:none;
-  color:#444;
-}
-nav a:hover{color:#000}
-section{
-  background:#fff;
-  border:1px solid #e5e7eb;
-  border-radius:14px;
-  padding:24px;
-  margin-top:24px;
-}
-h1{margin-top:0}
-h2{margin-top:0}
-h3{margin-top:18px}
-p{margin-bottom:12px;color:#333}
-ul{padding-left:20px}
-footer{
-  margin:40px 0 20px;
-  text-align:center;
-  color:#666;
-  font-size:.95rem;
-}
-.note{
-  background:#fff7ed;
-  border:1px solid #fed7aa;
-  padding:14px;
-  border-radius:12px;
-  margin-bottom:20px;
-}
-.top{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#111;
-  color:#fff;
-  padding:10px 14px;
-  border-radius:999px;
-  text-decoration:none;
-  display:none;
-}
-.top.show{display:block}
-</style>
+<meta name="description" content="Anbieterkennzeichnung, Kontakt und Datenschutzhinweise von Mercatora.">
 </head>
-
 <body>
-
+<a class="skip" href="#inhalt">Zum Inhalt</a>
 <header>
-  <div class="container">
-    <strong>Mercatora</strong>
-    <nav>
-      <a href="/index.html">Startseite</a>
-      <a href="#impressum">Impressum</a>
-      <a href="#datenschutz">Datenschutz</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </div>
+<div class="wrap nav">
+<a class="brand" href="index.html" aria-label="Mercatora Startseite">
+<span class="brand-symbol" aria-hidden="true">M</span>
+<span>MERCATORA<small>Ideen. Struktur. Umsetzung.</small>
+</span>
+</a>
+<nav aria-label="Hauptnavigation">
+<a href="index.html#leistungen">Leistungen</a>
+<a href="index.html#projekte">Projekte</a>
+<a href="index.html#bereiche">Handel & Whisky</a>
+<a class="nav-contact" href="index.html#kontakt">Kontakt <span aria-hidden="true">↗</span>
+</a>
+</nav>
+</div>
 </header>
-
-<div class="container" id="top">
-
+<main id="inhalt" class="wrap section legal">
 <section id="impressum">
 <h1>Impressum</h1>
 
-<p><strong>Angaben gemäß § 5 TMG</strong></p>
+<p>
+<strong>Angaben gemäß § 5 DDG</strong>
+</p>
 
 <p>
-<strong>Mercatora</strong><br>
+<strong>Mercatora</strong>
+<br>
 Felix Sagmeister<br>
 Bleichstraße 10<br>
 64732 Bad König<br>
@@ -114,104 +53,52 @@ E-Mail: <a href="mailto:info@mercatora.eu">info@mercatora.eu</a>
 </p>
 
 <p>
-<strong>Umsatzsteuer</strong><br>
+<strong>Umsatzsteuer</strong>
+<br>
 Kleinunternehmer im Sinne von § 19 UStG – es wird keine Umsatzsteuer ausgewiesen.
 </p>
 
 <p>
-<strong>Streitbeilegung</strong><br>
+<strong>Streitbeilegung</strong>
+<br>
 Ich bin nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
 Verbraucherschlichtungsstelle teilzunehmen.
 </p>
 </section>
-
-<section id="kontakt">
-<h2>Kontakt</h2>
-<p>
-Bei Fragen zu dieser Website, zum Datenschutz oder zu Angeboten erreichst du mich unter:
-</p>
-<ul>
-  <li>E-Mail: <a href="mailto:kontakt@mercatora.eu">kontakt@mercatora.eu</a></li>
-  <li>Telefon: 06063&nbsp;2090</li>
-</ul>
-</section>
-
 <section id="datenschutz">
 <h2>Datenschutzerklärung</h2>
-
-<div class="note">
-Diese Website wird statisch über GitHub Pages betrieben.  
-Es werden keine Tracking-Tools, keine Werbung und keine Analyse-Dienste eingesetzt.
-</div>
-
-<h3>1. Datenschutz auf einen Blick</h3>
-<p>
-Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen
-Daten passiert, wenn du diese Website besuchst.
-</p>
-
-<h3>2. Hosting</h3>
-<p>
-Diese Website wird bei GitHub Pages gehostet. Beim Aufruf der Seite werden durch den Hostinganbieter
-Server-Log-Dateien erhoben (IP-Adresse, Datum und Uhrzeit, Browsertyp).
-</p>
-<p>
-Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb).
-</p>
-
-<h3>3. Kontaktaufnahme</h3>
-<p>
-Wenn du mich per E-Mail, Telefon oder Kontaktformular kontaktierst, werden deine Angaben zur Bearbeitung
-der Anfrage verarbeitet. Diese Daten werden nicht ohne deine Einwilligung weitergegeben.
-</p>
-
-<h3>4. Newsletter</h3>
-<p>
-Wenn du dich für einen Newsletter anmeldest, wird deine E-Mail-Adresse ausschließlich für den Versand
-des Newsletters verwendet. Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung
-(Art. 6 Abs. 1 lit. a DSGVO). Du kannst den Newsletter jederzeit abbestellen.
-</p>
-
-<h3>5. Deine Rechte</h3>
-<ul>
-  <li>Auskunft über deine gespeicherten Daten</li>
-  <li>Berichtigung unrichtiger Daten</li>
-  <li>Löschung oder Einschränkung der Verarbeitung</li>
-  <li>Widerspruch gegen die Verarbeitung</li>
-  <li>Datenübertragbarkeit</li>
-</ul>
-
-<h3>6. SSL-/TLS-Verschlüsselung</h3>
-<p>
-Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung.
-</p>
-
-<h3>7. Widerspruch gegen Werbe-E-Mails</h3>
-<p>
-Der Nutzung der im Impressum veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich
-angeforderter Werbung wird hiermit widersprochen.
-</p>
-
-<p><em>Quelle der rechtlichen Texte: eRecht24 (inhaltlich angepasst)</em></p>
+<p>Stand: 15. November 2026</p>
+<h3>1. Verantwortlicher</h3>
+<p>Verantwortlich für die Datenverarbeitung ist Felix Sagmeister, Mercatora, Bleichstraße 10, 64732 Bad König, Deutschland. Telefon: 06063 2090. E-Mail: <a href="mailto:info@mercatora.eu">info@mercatora.eu</a>.</p>
+<h3>2. Hosting und Zugriffsdaten</h3>
+<p>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst von GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. Beim Aufruf werden technisch erforderliche Daten wie IP-Adresse, Zeitpunkt, aufgerufene Adresse sowie Browserinformationen an den Hostinganbieter übermittelt. Dies dient der Auslieferung und Sicherheit der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+<p>Die Verarbeitung kann auch in den USA stattfinden. Angaben zu Empfängern, Speicherdauer und internationalen Datenübermittlungen finden Sie in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" rel="noreferrer">Datenschutzerklärung von GitHub</a>.</p>
+<h3>3. Kontakt per E-Mail oder Telefon</h3>
+<p>Wenn Sie uns kontaktieren, verarbeiten wir Ihre übermittelten Kontaktdaten und den Inhalt Ihrer Anfrage, um diese zu bearbeiten. Bei einer vertragsbezogenen Anfrage ist Art. 6 Abs. 1 lit. b DSGVO die Rechtsgrundlage, bei sonstigen Anfragen Art. 6 Abs. 1 lit. f DSGVO. Daten werden gelöscht, wenn sie für den Zweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+<p>E-Mail-Links öffnen Ihr eigenes E-Mail-Programm. Diese Website übermittelt keine Formulareingaben und bietet keinen Newsletter an.</p>
+<h3>4. Schriften, Cookies und externe Inhalte</h3>
+<p>Die Schriften Manrope und Inter werden lokal von dieser Website geladen. Die Seiten binden keine Analyse- oder Werbedienste ein und setzen selbst keine Cookies oder lokalen Speicher ein.</p>
+<p>Im Whiskybereich führt ein gekennzeichneter Link zur Flaschenliste bei Google. Erst wenn Sie diesen Link öffnen, rufen Sie den externen Dienst auf. Dabei gelten dessen Datenschutzbestimmungen. Eine automatische Einbettung findet nicht statt.</p>
+<h3>5. Ihre Rechte</h3>
+<p>Sie haben im Rahmen der gesetzlichen Voraussetzungen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit. Sie können einer Verarbeitung auf Grundlage berechtigter Interessen gemäß Art. 21 DSGVO widersprechen. Soweit eine Verarbeitung auf Einwilligung beruht, können Sie diese mit Wirkung für die Zukunft widerrufen.</p>
+<p>Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren. Für Hessen ist dies der <a href="https://datenschutz.hessen.de/">Hessische Beauftragte für Datenschutz und Informationsfreiheit</a>.</p>
+<h3>6. Verschlüsselung</h3>
+<p>Der Abruf der Website über HTTPS schützt die Übertragung zwischen Ihrem Browser und dem Hostinganbieter. Bitte übermitteln Sie besonders vertrauliche Inhalte nicht unaufgefordert per E-Mail.</p>
 </section>
-
+</main>
 <footer>
-© <span id="year"></span> Mercatora ·
-<a href="/index.html">Startseite</a>
-</footer>
-
+<div class="wrap footer">
+<div>
+<a class="wordmark" href="index.html">MERCATORA</a>
+<p>Digitale Lösungen · Projekte · Handel</p>
 </div>
-
-<a href="#top" class="top" id="topBtn">⬆</a>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-const topBtn=document.getElementById("topBtn");
-window.addEventListener("scroll",()=>{
-  if(window.scrollY>400){topBtn.classList.add("show")}
-  else{topBtn.classList.remove("show")}
-});
-</script>
-
+<nav aria-label="Rechtliche Informationen">
+<a href="impressum.html">Impressum</a>
+<a href="impressum.html#datenschutz">Datenschutz</a>
+<a href="index.html#kontakt">Kontakt</a>
+</nav>
+<span>© 2026 Mercatora</span>
+</div>
+</footer>
 </body>
 </html>
